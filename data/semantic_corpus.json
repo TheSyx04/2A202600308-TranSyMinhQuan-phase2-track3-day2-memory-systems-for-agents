@@ -1,0 +1,32 @@
+[
+  {
+    "id": "faq-docker-compose-service-name",
+    "text": "Khi app chay trong Docker Compose, ket noi database nen dung ten service (vi du: db) thay vi localhost.",
+    "tags": ["docker", "compose", "database", "networking"]
+  },
+  {
+    "id": "faq-timeout-retry-policy",
+    "text": "Neu API timeout bat thuong, uu tien them timeout ro rang, retry co gioi han, va exponential backoff de tranh qua tai.",
+    "tags": ["api", "timeout", "retry", "backoff"]
+  },
+  {
+    "id": "faq-conflict-fact-update",
+    "text": "Khi user sua thong tin profile, gia tri moi nhat can overwrite gia tri cu de tranh memory mau thuan.",
+    "tags": ["memory", "profile", "conflict", "overwrite"]
+  },
+  {
+    "id": "faq-trim-context-budget",
+    "text": "Neu context vuot ngan sach token, can trim theo uu tien: profile quan trong, episodic moi nhat, semantic lien quan nhat, va recent turns.",
+    "tags": ["context", "token", "trim", "budget"]
+  },
+  {
+    "id": "faq-oncall-postmortem",
+    "text": "Sau su co on-call, nen luu episodic memory voi summary, nguyen nhan goc, cach fix, va action items de truy hoi sau.",
+    "tags": ["oncall", "postmortem", "episodic", "incident"]
+  },
+  {
+    "id": "faq-privacy-consent",
+    "text": "Thong tin nhay cam trong profile can co consent, thoi han luu tru (TTL), va co co che xoa theo yeu cau nguoi dung.",
+    "tags": ["privacy", "consent", "ttl", "deletion"]
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "user_id": "user_1",
+    "summary": "Toi vua note xong va muon tiep tuc.",
+    "outcome": "completed_or_reported",
+    "tags": [],
+    "created_at": "2026-04-24T08:36:22.610388+00:00"
+  },
+  {
+    "user_id": "user_5",
+    "summary": "Sang nay toi sua xong bug login redirect.",
+    "outcome": "completed_or_reported",
+    "tags": [
+      "login"
+    ],
+    "created_at": "2026-04-24T08:36:22.675231+00:00"
+  },
+  {
+    "user_id": "user_5",
+    "summary": "Ket qua la user dang nhap khong bi day ve trang cu nua.",
+    "outcome": "completed_or_reported",
+    "tags": [],
+    "created_at": "2026-04-24T08:36:22.689613+00:00"
+  },
+  {
+    "user_id": "user_6",
+    "summary": "Dem qua toi da xu ly xong su co API 503.",
+    "outcome": "completed_or_reported",
+    "tags": [
+      "api"
+    ],
+    "created_at": "2026-04-24T08:36:22.698976+00:00"
+  },
+  {
+    "user_id": "user_6",
+    "summary": "Nguyen nhan la timeout chuoi goi service noi bo.",
+    "outcome": "completed_or_reported",
+    "tags": [
+      "timeout"
+    ],
+    "created_at": "2026-04-24T08:36:22.711337+00:00"
+  },
+  {
+    "user_id": "user_6",
+    "summary": "Toi dat retry 2 lan va mo rong timeout len 8 giay.",
+    "outcome": "completed_or_reported",
+    "tags": [
+      "timeout"
+    ],
+    "created_at": "2026-04-24T08:36:22.727330+00:00"
+  },
+  {
+    "user_id": "user_10",
+    "summary": "Toi vua fix xong canh bao CPU dot bien tren service billing.",
+    "outcome": "completed_or_reported",
+    "tags": [
+      "cpu"
+    ],
+    "created_at": "2026-04-24T08:36:22.784188+00:00"
+  },
+  {
+    "user_id": "user_10",
+    "summary": "Nguyen nhan la retry policy qua nong gay request burst.",
+    "outcome": "completed_or_reported",
+    "tags": [],
+    "created_at": "2026-04-24T08:36:22.799061+00:00"
+  },
+  {
+    "user_id": "user_10",
+    "summary": "Toi da giam retry va them jitter.",
+    "outcome": "completed_or_reported",
+    "tags": [],
+    "created_at": "2026-04-24T08:36:22.814613+00:00"
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "category": "profile_recall",
+    "scenario": "Nho ten nguoi dung sau nhieu turn",
+    "turns": [
+      "Chao ban, toi ten la Minh Chau.",
+      "Hom nay toi muon hoc cach viet unit test.",
+      "Ban goi y mot checklist ngan cho toi nhe.",
+      "Toi vua note xong va muon tiep tuc.",
+      "Truoc khi tiep, toi dang hoi hop vi deadline gan.",
+      "Ok gio toi quay lai cau hoi ve thong tin ca nhan."
+    ],
+    "probe": "Ban nho ten toi khong?",
+    "expected_with_memory_contains": ["Minh Chau"]
+  },
+  {
+    "id": 2,
+    "category": "profile_recall",
+    "scenario": "Nho nghe nghiep sau hoi thoai dai",
+    "turns": [
+      "Toi lam QA automation o cong ty fintech.",
+      "Du an hien tai dung Python va Playwright.",
+      "Toi can toi uu pipeline test CI.",
+      "Cho toi 3 buoc uu tien trong tuan nay.",
+      "Cam on, toi se thu ngay toi nay."
+    ],
+    "probe": "Ban nho toi lam nghe gi khong?",
+    "expected_with_memory_contains": ["QA automation"]
+  },
+  {
+    "id": 3,
+    "category": "profile_recall",
+    "scenario": "Nho so thich cong cu lam viec",
+    "turns": [
+      "Toi thich dung Neovim hon VS Code khi code backend.",
+      "Nhung toi van dung VS Code de review pull request.",
+      "Cho toi mot meo de giu tap trung khi doc diff lon.",
+      "Hay tom tat meo thanh 2 dong cho de nho."
+    ],
+    "probe": "So thich cong cu code cua toi la gi?",
+    "expected_with_memory_contains": ["Neovim"]
+  },
+  {
+    "id": 4,
+    "category": "conflict_update",
+    "scenario": "Cap nhat fact profile bi mau thuan",
+    "turns": [
+      "Toi di ung sua bo.",
+      "Khoan da, toi noi nham. Toi di ung dau nanh moi dung.",
+      "Ban nhac lai thong tin suc khoe de toi kiem tra."
+    ],
+    "probe": "Ket luan cuoi cung: toi di ung gi?",
+    "expected_with_memory_contains": ["dau nanh"]
+  },
+  {
+    "id": 5,
+    "category": "episodic_recall",
+    "scenario": "Nho ket qua task vua hoan thanh",
+    "turns": [
+      "Sang nay toi sua xong bug login redirect.",
+      "Ket qua la user dang nhap khong bi day ve trang cu nua.",
+      "Nho luu bai hoc nay de lan sau review nhanh hon."
+    ],
+    "probe": "Task nao toi vua hoan thanh va outcome la gi?",
+    "expected_with_memory_contains": ["login", "khong bi day ve trang cu"]
+  },
+  {
+    "id": 6,
+    "category": "episodic_recall",
+    "scenario": "Nho su kien on-call gan day",
+    "turns": [
+      "Dem qua toi da xu ly xong su co API 503.",
+      "Nguyen nhan la timeout chuoi goi service noi bo.",
+      "Toi dat retry 2 lan va mo rong timeout len 8 giay.",
+      "Lan sau can co postmortem ngan gon."
+    ],
+    "probe": "Ban tom tat su co on-call toi vua xu ly di.",
+    "expected_with_memory_contains": ["API 503", "retry", "timeout"]
+  },
+  {
+    "id": 7,
+    "category": "semantic_retrieval",
+    "scenario": "Lay kien thuc semantic ve Docker",
+    "turns": [
+      "Toi dang chay app bang docker compose.",
+      "Khi ket noi DB thi app bi loi ket noi localhost.",
+      "Toi nghi do networking nhung chua ro cach sua."
+    ],
+    "probe": "Trong Docker Compose, app nen ket noi DB bang localhost hay ten service?",
+    "expected_with_memory_contains": ["ten service", "localhost"]
+  },
+  {
+    "id": 8,
+    "category": "semantic_retrieval",
+    "scenario": "Lay kien thuc semantic ve conflict handling",
+    "turns": [
+      "Toi dang viet memory system cho chatbot.",
+      "Van de la user hay sua thong tin profile nhieu lan.",
+      "Toi can nguyen tac xu ly mau thuan don gian nhung dung."
+    ],
+    "probe": "Khi conflict profile xay ra, nen overwrite hay append ca hai?",
+    "expected_with_memory_contains": ["overwrite"]
+  },
+  {
+    "id": 9,
+    "category": "trim_budget",
+    "scenario": "Kiem thu trim context voi hoi thoai dai",
+    "turns": [
+      "Toi muon lap ke hoach hoc 6 tuan cho he thong phan tan.",
+      "Tuan 1 hoc CAP theorem va replication.",
+      "Tuan 2 hoc message queue va event-driven.",
+      "Tuan 3 hoc caching, invalidation va consistency.",
+      "Tuan 4 hoc observability gom metrics, logs, tracing.",
+      "Tuan 5 hoc reliability, SLO, error budget.",
+      "Tuan 6 hoc incident response va postmortem.",
+      "Ngoai ra toi con muon on lai SQL tuning va indexing.",
+      "Toi cung can thoi gian cho du an ca nhan cuoi tuan.",
+      "Hay giu cac thong tin quan trong nhat neu context bi dai qua."
+    ],
+    "probe": "Neu ngan sach context bi gioi han, uu tien trim theo thu tu nao?",
+    "expected_with_memory_contains": ["profile", "episodic", "semantic", "recent"]
+  },
+  {
+    "id": 10,
+    "category": "mixed_recall",
+    "scenario": "Ket hop profile + episodic + semantic",
+    "turns": [
+      "Toi ten la Bao Tran va toi lam SRE.",
+      "Toi vua fix xong canh bao CPU dot bien tren service billing.",
+      "Nguyen nhan la retry policy qua nong gay request burst.",
+      "Toi da giam retry va them jitter.",
+      "Lan toi neu timeout API thi can nho guideline nao?"
+    ],
+    "probe": "Tom tat nhanh: toi la ai, vua xu ly gi, va guideline timeout nao nen dung?",
+    "expected_with_memory_contains": ["Bao Tran", "CPU", "retry", "backoff"]
+  }
+]
